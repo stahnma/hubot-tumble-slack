@@ -59,7 +59,7 @@ module.exports = (robot) ->
         link_to_message = "https://stahnma.slack.com/archives/" + msg.message.rawMessage.channel + "/p" + msg.message.rawMessage.ts.replace /\./, ''
         #console.log link_to_message
         ack =
-          text: "<http://tumble.devops.af:4567|tumble> quote posted from <#" + msg.message.rawMessage.channel + "> by <@#{msg.message.user.id}> (<#{link_to_message}|slack archive link>)"
+          text: "<http://tumble.devops.af:4567|tumble> quote posted from <#" + msg.message.rawMessage.channel + "> by <@#{msg.message.user.id}> (<#{link_to_message}|slack archive>)"
           unfurl_links: false
         robot.messageRoom  'tumble-info',  ack
         if robot.adapter.options && robot.adapter.options.token
