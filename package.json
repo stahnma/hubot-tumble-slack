@@ -1,0 +1,43 @@
+{
+  "name": "hubot-tumble-slack",
+  "version": "0.0.1",
+  "description": "hubot client via slack adapter to tumble.",
+  "main": "index.js",
+  "homepage": "https://github.com/stahnma/hubot-tumble-slack",
+  "scripts": {
+    "test": "EXPRESS_PORT=9012 mocha \"test/**/*.*\" --reporter spec",
+    "lint": "jshint src/*.js test/*.js",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "tumble",
+    "slack"
+  ],
+  "author": "Michael Stahnke <stahnma@devops.af>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stahnma/hubot-tumble-slack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stahnma/hubot-tumble-slack"
+  },
+  "peerDependencies": {
+    "hubot": "^3"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "hubot-test-helper": "^1.9.0",
+    "husky": "^8.0.1",
+    "js-beautify": "^1.14.3",
+    "jshint": "^2.13.4",
+    "matchdep": "^2.0.0",
+    "mocha": "^10.0.0",
+    "nock": "^13.2.4",
+    "release-it": "^15.0.0",
+    "sinon": "^14.0.0",
+    "sinon-chai": "^3.7.0"
+  }
+}
