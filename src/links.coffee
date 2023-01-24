@@ -77,6 +77,9 @@ module.exports = (robot) ->
               url = w
           tumble_url = tumble_base + "/link/"
           data  = QS.stringify url: url, user: user
+          # exclude putting zoom links on the aggregator
+          if url.match ( /zoom\.us/ )
+              return
 # TODO slack safety
           if robot.adapter.options && robot.adapter.options.token
             chs = web.conversations.info
